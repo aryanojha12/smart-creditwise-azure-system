@@ -1,0 +1,120 @@
+{
+  "selected_model": "logistic_regression",
+  "selection_criterion": "highest ROC-AUC on held-out test set",
+  "features_used": [
+    "Gender",
+    "Married",
+    "Dependents",
+    "Education",
+    "Self_Employed",
+    "Property_Area",
+    "ApplicantIncome",
+    "CoapplicantIncome",
+    "LoanAmount",
+    "Loan_Amount_Term",
+    "Credit_History"
+  ],
+  "n_features_raw": 11,
+  "n_features_after_encoding": 21,
+  "train_rows": 491,
+  "test_rows": 123,
+  "all_models": {
+    "logistic_regression": {
+      "accuracy": 0.8618,
+      "precision": 0.84,
+      "recall": 0.9882,
+      "f1": 0.9081,
+      "roc_auc": 0.8548,
+      "confusion_matrix": [
+        [
+          22,
+          16
+        ],
+        [
+          1,
+          84
+        ]
+      ]
+    },
+    "random_forest": {
+      "accuracy": 0.8537,
+      "precision": 0.8317,
+      "recall": 0.9882,
+      "f1": 0.9032,
+      "roc_auc": 0.8099,
+      "confusion_matrix": [
+        [
+          21,
+          17
+        ],
+        [
+          1,
+          84
+        ]
+      ]
+    },
+    "gradient_boosting": {
+      "accuracy": 0.813,
+      "precision": 0.8229,
+      "recall": 0.9294,
+      "f1": 0.8729,
+      "roc_auc": 0.756,
+      "confusion_matrix": [
+        [
+          21,
+          17
+        ],
+        [
+          6,
+          79
+        ]
+      ]
+    }
+  },
+  "feature_names_encoded": [
+    "cat__Gender_Female",
+    "cat__Gender_Male",
+    "cat__Married_No",
+    "cat__Married_Yes",
+    "cat__Dependents_0",
+    "cat__Dependents_1",
+    "cat__Dependents_2",
+    "cat__Dependents_3",
+    "cat__Dependents_nan",
+    "cat__Education_Graduate",
+    "cat__Education_Not Graduate",
+    "cat__Self_Employed_No",
+    "cat__Self_Employed_Yes",
+    "cat__Property_Area_Rural",
+    "cat__Property_Area_Semiurban",
+    "cat__Property_Area_Urban",
+    "num__ApplicantIncome",
+    "num__CoapplicantIncome",
+    "num__LoanAmount",
+    "num__Loan_Amount_Term",
+    "num__Credit_History"
+  ],
+  "feature_importance_or_coef": [
+    0.09137723459196026,
+    -0.09009450478479962,
+    -0.2729447269744262,
+    0.2742274567815857,
+    -0.09130879968917294,
+    -0.4049473923411738,
+    0.30235329674244704,
+    0.12377858577665685,
+    0.07140703931840486,
+    0.194612637168589,
+    -0.19332990736142985,
+    0.11239146955898555,
+    -0.11110873975182277,
+    -0.30856321444715373,
+    0.46439904911694474,
+    -0.15455310486262916,
+    0.01090176038261004,
+    -0.1485683389450064,
+    -0.0415198572709906,
+    -0.01922271770790211,
+    1.2478451905657069
+  ]
+}
